@@ -20,8 +20,3 @@ app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send({ error: 'Error interno del servidor.' });
 });
-
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
